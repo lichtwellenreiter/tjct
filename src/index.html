@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Webseite für die Heirat von Flurina und Jonas">
+    <link rel="stylesheet" href="css/onepage.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>❤ Flurina &amp; Jonas</title>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <section class="bride-groom">
+
+            <div class="bride-groom-box">
+                <div class="bride-groom-names">
+                    <h1>Flurina & Jonas</h1>
+                </div>
+                <div class="bride-groom-dates">
+                    21. August 2020 • Thalwil
+                </div>
+            </div>
+
+            <div class="bride-groom-arrow">
+                <img class="bride-groom-arrow-image bounce" src="assets/img/a-down.png">
+                <p class="bride-groom-arrow-text">... mehr infos ...</p>
+            </div>
+
+        </section>
+        <section class="about-us">
+            <div class="text-field right-side opaque w500 h300">
+                <p class="title greater">Über uns ein wenig</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.</p>
+            </div>
+        </section>
+        <section class="location">
+            <div class="text-field location-text">
+                <p class="title greater">Der Ort des Geschehens...</p>
+                <p>
+                    <address>
+                        Baumann Gärten<br>
+                        Zürcherstrasse 63<br>
+                        8800 Thalwil<br>
+                        Schweiz
+                    </address>
+                </p>
+            </div>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1736.4619211790373!2d8.566882617152146!3d47.28356029153279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sde!2sch!4v1573225253675!5m2!1sde!2sch" width="600" height="450" frameborder="0"
+                    style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </section>
+        <section class="food">
+
+            <div class="text-field food-text">
+                <p class="title greater">
+                    Anwesenheitserklärung
+                </p>
+                <p>Ich erkläre hiermit feierlich dass ich / wir dabei sind:
+
+                    <form class="form">
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input id="name" type="email" name="namen">
+                        </div>
+                        <div class="form-control">
+                            <label for="email">E-Mail</label>
+                            <input id="email" type="email" name="email">
+                        </div>
+                        <div class="form-control">
+                            <label for="anz">Anzahl</label>
+                            <input id="anz" type="number" name="anz">
+                        </div>
+                        <div class="form-control">
+                            <label for="food">Essenspräferenz</label>
+                            <select id="food" name="foods">
+                                    <option value=""></option>
+                                    <option value="Allesesser">Allesesser</option>
+                                    <option value="Vegetarisch">Vegetarisch</option>
+                                    <option value="Vegan">Vegan</option>
+                                    <option value="Milchbehindert">Milchbehindert</option>
+                                    <option value="Glutenrassist">Glutenrassist</option>
+                            </select>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="info">Mitteilung</label>
+                            <textarea name="info"></textarea>
+                        </div>
+                        <div class="form-control">
+                            <button type="submit">absenden</button>
+                        </div>
+                    </form>
+
+                </p>
+            </div>
+
+        </section>
+    </div>
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/onepage.js"></script>
+<script>
+    $(".main").onepage_scroll({
+        sectionContainer: "section",
+        easing: "ease",
+        animationTime: 1000,
+        pagination: true,
+        updateURL: false,
+        beforeMove: function(index) {},
+        afterMove: function(index) {},
+        loop: false,
+        keyboard: true,
+        responsiveFallback: false
+    });
+
+    // Scroll Down when klicked on start page arrow
+    $(document).on('click', '.bride-groom-arrow-image', function(e) {
+        $(".main").moveDown();
+    });
+    $(document).on('click', '.bride-groom-arrow-text', function(e) {
+        $(".main").moveDown();
+    });
+</script>
+
+</html>

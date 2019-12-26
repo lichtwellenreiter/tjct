@@ -1,0 +1,30 @@
+.location {
+    background: #00cec9;
+}
+
+
+
+.location-text {
+    position: absolute;
+    height: 49%;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: #dfe6e9;
+    padding: 45px;
+    text-align: justify
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0
+}
+.map-responsive iframe {
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+}

@@ -1,0 +1,260 @@
+@font-face {
+    font-family: AtamiBold;
+    src: url(../assets/fonts/atami-bold-webfont.woff2?9b33389aa700ee44e7c3a54e92bf632f) format("woff2"), url(../assets/fonts/atami-bold-webfont.woff?b6c42a92bd60c3a55c089fc0e7b681d6) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: AtamiRegular;
+    src: url(../assets/fonts/atami-regular-webfont.woff2?bdb366d28ac02a665cd48ef83114edf4) format("woff2"), url(../assets/fonts/atami-regular-webfont.woff?4c6cf351ddbe82a76e5a208f891bf589) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Miama;
+    src: url(../assets/fonts/miama-webfont.woff2?86b5d5ad7a4c5337f3bb2047b4c09cca) format("woff2"), url(../assets/fonts/miama-webfont.woff?a8b523951c349c8e33e4afe49fcd09f2) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+body {
+    font-family: AtamiRegular, sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Miama, sand-serif
+}
+
+.title {
+    font-family: Miama, sans-serif;
+    font-size: 5em
+}
+
+.greater {
+    font-size: 4rem;
+    line-height: .5rem
+}
+
+.text-field {
+    padding: 25px;
+    text-align: justify
+}
+
+.right-side {
+    position: relative;
+    left: 75%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.opaque {
+    background-color: rgba(0, 0, 0, .8);
+    color: #dfe6e9
+}
+
+.w500 {
+    width: 500px
+}
+
+.h300 {
+    height: 300px
+}
+
+.bride-groom {
+    background: #000 url(../assets/img/header.svg?d18e035c8aecb3eefd78cb667cf517f7) 100% top no-repeat
+}
+
+.bride-groom-box {
+    color: #dfe6e9;
+    font-family: Miama, sans-serif;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.bride-groom-names {
+    font-family: Miama, sans-serif;
+    font-size: 10vw;
+    line-height: 10vw;
+    margin-top: 20vh;
+    margin-bottom: 0
+}
+
+.bride-groom-dates {
+    position: relative;
+    top: -10vh;
+    font-size: 5em;
+    line-height: 1em
+}
+
+.bride-groom-arrow {
+    position: fixed;
+    bottom: 3px;
+    color: #dfe6e9;
+    width: 100%;
+    text-align: center;
+    height: 5em;
+    font-family: AtamiRegular, sans-serif
+}
+
+.bride-groom-arrow-image,
+.bride-groom-arrow-text {
+    cursor: pointer
+}
+
+.bride-groom-arrow-image {
+    height: 2em
+}
+
+.bride-groom-arrow-text {
+    position: relative;
+    top: -1.2em
+}
+
+@media screen and (max-width:480px) {
+    .startpage {
+        background: url(../assets/img/header-sm.svg?7164019f223943ba0b2c216a3da73722)
+    }
+}
+
+.bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px)
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px)
+    }
+}
+
+.about-us {
+    background-color: #00b894;
+    background-image: url(../assets/img/about_us.jpg?e6c43755ac7c00a41132bfcae9435083);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.location {
+    background: #00cec9
+}
+
+.location-text {
+    position: absolute;
+    height: 49%;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: #dfe6e9;
+    padding: 45px;
+    text-align: justify
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0
+}
+
+.map-responsive iframe {
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    position: absolute
+}
+
+.food {
+    background-color: #0984e3;
+    background-image: url(../assets/img/banquet.jpg?0c991b422ce76950cfd33ed66cd0b4f1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 100%
+}
+
+.food-text {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: #dfe6e9;
+    padding: 45px;
+    text-align: justify
+}
+
+.form {
+    width: 100%
+}
+
+.form-control {
+    padding: 10px
+}
+
+.form-control>label {
+    display: block;
+    width: 100%
+}
+
+.form-control>input,
+.form-control>select,
+.form-control>textarea {
+    padding: 5px;
+    font-size: 1.5em;
+    width: 100%;
+    font-family: AtamiRegular, sans-serif
+}
+
+.form-control>button {
+    padding: 5px;
+    font-size: 1.5em;
+    widows: 50px;
+    font-family: AtamiRegular, sans-serif
+}

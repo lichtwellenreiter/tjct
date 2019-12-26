@@ -1,0 +1,52 @@
+@import 'fonts';
+
+body {
+    font-family: AtamiRegular, sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Miama, sand-serif
+}
+
+.title{
+    font-family: Miama, sans-serif;
+    font-size: 5em;
+}
+.greater {
+    font-size: 4rem;
+    line-height: .5rem
+}
+.text-field {
+    padding: 25px;
+    text-align: justify
+}
+.right-side {
+    position: relative;
+    left: 75%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+.opaque {
+    background-color: rgba(0, 0, 0, .8);
+    color: #dfe6e9
+}
+.w500 {
+    width: 500px
+}
+.h300 {
+    height: 300px
+}
+
+
+
+@import 'startpage';
+@import 'about-us';
+@import 'location';
+@import 'invite';
+
