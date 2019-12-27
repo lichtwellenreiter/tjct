@@ -15,6 +15,7 @@ mix.js('src/js/app.js', 'public/js/')
     .js('src/js/onepage.js', 'public/js/')
     .sass('src/sass/styles.scss', 'public/css/')
     .sass('src/sass/onepage.scss', 'public/css/')
+    .sass('src/sass/bs/bootstrap.scss', 'public/css/')
     .setPublicPath('public');
 
 mix.copy('src/index.html', 'public/index.html');

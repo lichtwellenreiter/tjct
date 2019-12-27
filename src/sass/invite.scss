@@ -18,30 +18,14 @@
     text-align: justify
 }
 
-.form {
-    width: 100%;
-}
-
-.form-control {
-    padding: 10px;
-}
-
-.form-control>label {
-    display: block; width: 100%;
-}
-
-.form-control>input,
-.form-control>select,
-.form-control>textarea {
-    padding: 5px;
-    font-size: 1.5em;
-    width:100%;
-    font-family: AtamiRegular, sans-serif
-}
-
-.form-control>button{
-    padding: 5px;
-    font-size: 1.5em;
-    widows: 50px;
-    font-family: AtamiRegular, sans-serif
+@media screen and (max-width:576px){
+    .food{
+        background-size: cover;
+    }
+    .food-text {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
 }

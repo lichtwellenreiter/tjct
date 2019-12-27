@@ -1,11 +1,25 @@
 <!doctype html>
 <html lang="de">
+<!--
+                                          A
+             ___                         / \
+          .="   "=._.---.               /   \              ____________
+        ."         c ' Y'`p            /     \            /)  -
+       /     \     `\  w_/            :~~~~~~~:          / )-   .   -
+       |      )  /     /              |       |         <  )      -- 
+ ______|     /__-\ \_=.\              |       |          \ )  -      -
+(XXXXX/'`------)))`=-'"`'"___________/__/__\___\___ _ _ _ \)___________
+ ~~~~~
+
+Hei Hei You just found Alvin the Beaver! Have a nice Day.
+-->
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Webseite für die Heirat von Flurina und Jonas">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/onepage.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -20,7 +34,7 @@
 
             <div class="bride-groom-box">
                 <div class="bride-groom-names">
-                    <h1>Flurina & Jonas</h1>
+                    Flurina & Jonas
                 </div>
                 <div class="bride-groom-dates">
                     21. August 2020 • Thalwil
@@ -31,19 +45,26 @@
                 <img class="bride-groom-arrow-image bounce" src="assets/img/a-down.png">
                 <p class="bride-groom-arrow-text">... mehr infos ...</p>
             </div>
-
         </section>
+
+
+
+
         <section class="about-us">
             <div class="text-field right-side opaque w500 h300">
-                <p class="title greater">Über uns ein wenig</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                <h1 class="display-4">Über uns ein wenig</h1>
+                <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
                     eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.</p>
             </div>
         </section>
+
+
+
+
         <section class="location">
-            <div class="text-field location-text">
-                <p class="title greater">Der Ort des Geschehens...</p>
-                <p>
+            <div class="text-field location-text text-center">
+                <h1 class="display-3">Der Ort des Geschehens...</h1>
+                <p class="text-center mt-5">
                     <address>
                         Baumann Gärten<br>
                         Zürcherstrasse 63<br>
@@ -60,27 +81,25 @@
         <section class="food">
 
             <div class="text-field food-text">
-                <p class="title greater">
-                    Anwesenheitserklärung
-                </p>
-                <p>Ich erkläre hiermit feierlich dass ich / wir dabei sind:
+                <h1 class="display-4">Anwesenheitserklärung</h1>
+                <p class="mt-5">Ich erkläre hiermit feierlich dass ich / wir dabei sind:
 
-                    <form class="form">
-                        <div class="form-control">
+                    <form>
+                        <div class="form-group">
                             <label for="name">Name</label>
-                            <input id="name" type="email" name="namen">
+                            <input class="form-control" id="name" type="text" name="invite-name">
                         </div>
-                        <div class="form-control">
+                        <div class="form-group">
                             <label for="email">E-Mail</label>
-                            <input id="email" type="email" name="email">
+                            <input class="form-control" id="email" type="email" name="invite-email">
                         </div>
-                        <div class="form-control">
+                        <div class="form-group">
                             <label for="anz">Anzahl</label>
-                            <input id="anz" type="number" name="anz">
+                            <input class="form-control" id="anz" type="number" name="invite-count">
                         </div>
-                        <div class="form-control">
+                        <div class="form-group">
                             <label for="food">Essenspräferenz</label>
-                            <select id="food" name="foods">
+                            <select id="food" name="invite-foods" class="form-control">
                                     <option value=""></option>
                                     <option value="Allesesser">Allesesser</option>
                                     <option value="Vegetarisch">Vegetarisch</option>
@@ -90,13 +109,13 @@
                             </select>
                         </div>
 
-                        <div class="form-control">
+                        <div class="form-group">
                             <label for="info">Mitteilung</label>
-                            <textarea name="info"></textarea>
+                            <textarea class="form-control" name="invite-info"></textarea>
                         </div>
-                        <div class="form-control">
-                            <button type="submit">absenden</button>
-                        </div>
+                        <input type="hidden" name="invite-honey">
+                        <button class="btn btn-outline-light" type="submit">absenden</button>
+
                     </form>
 
                 </p>
@@ -114,7 +133,7 @@
         easing: "ease",
         animationTime: 1000,
         pagination: true,
-        updateURL: false,
+        updateURL: true,
         beforeMove: function(index) {},
         afterMove: function(index) {},
         loop: false,

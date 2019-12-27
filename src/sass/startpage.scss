@@ -1,8 +1,10 @@
-/**
- * First Page eg. Startpage
- */
  .bride-groom {
-    background: #000000 url('../assets/img/header.svg') 100% top no-repeat;
+    background-color: #000000;
+    background-image: url('../assets/img/header.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+
 }
 
 .bride-groom-box{
@@ -20,15 +22,15 @@
 
 .bride-groom-names{
     font-family: Miama, sans-serif;
-    font-size: 10vw;
-    line-height: 10vw;
-    margin-top: 20vh;
+    font-size: 15vw;
+    line-height: 15vw;
+    margin-top: 15vh;
     margin-bottom: 0;
 }
 
 .bride-groom-dates{
     position:relative;
-    top: -10vh;
+    top: 4vh;
     font-size: 5em;
     line-height: 1em;
 }
@@ -52,12 +54,26 @@
 }
 .bride-groom-arrow-text{
     position:relative;
-    top: -1.2em;
 }
 
-@media screen and (max-width: 480px) {
-    .startpage {
-        background: url('../assets/img/header-sm.svg');
+@media screen and (max-width: 576px) {
+    .bride-groom {
+        background-image: url('../assets/img/header-sm.svg');
+    }
+    
+    .bride-groom-box{
+        top: 35%;
+    }
+
+    .bride-groom-names{
+        font-size: 19vw;
+    }
+    
+    .bride-groom-dates{
+        position:relative;
+        top: 4vh;
+        font-size: 10vw;
+        line-height: 1em;
     }
 }
 

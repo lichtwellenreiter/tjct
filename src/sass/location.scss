@@ -2,11 +2,9 @@
     background: #00cec9;
 }
 
-
-
 .location-text {
     position: absolute;
-    height: 49%;
+    height: 50%;
     width: 100%;
     left: 0;
     background-color: rgba(0, 0, 0, .8);
@@ -27,4 +25,17 @@
     height: 50%;
     width: 100%;
     position: absolute;
+}
+
+@media screen and (max-width:576px){
+    .map-responsive {
+        position: relative;
+        top: 50%;
+        overflow: hidden;
+        height: 100%;
+    }
+    .map-responsive iframe {
+        height: 100%;
+        width: 100%;
+    }
 }

@@ -43,6 +43,25 @@ h6 {
     height: 300px
 }
 
+@media screen and (max-width:576px){
+    .greater {
+        font-size: 13vw;
+        line-height: .5rem;
+        margin: 10px;
+    }
+    .right-side {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        -webkit-transform: translatey(-50%);
+        transform: translatey(-50%)
+    }
+    .text {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}
+
 
 
 @import 'startpage';
